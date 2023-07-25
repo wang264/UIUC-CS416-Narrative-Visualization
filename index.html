@@ -1,9 +1,143 @@
-<!doctype html>
-<html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Narrative Visualization</title>
+  <link rel="stylesheet" type="text/css" href="template/fullpage.min.css"></style>
+  <link rel="stylesheet" type="text/css" href="styles/style.css"></style>
+</head>
+<body>
+
+  <div id="fullpage">
+    <div class="section">
+
+      <div class="slide" data-anchor="welcome">
+        <h1>Recessions and US Stock Market</h1>
+        <div class="intro">
+          <div><h3>Created by Daoxing Wang for CS416 Data Visualization at UIUC</h3></div>
+        </div>
+      </div>
+
+      <div class="slide" data-anchor="about">
+        <h2>About the Visualization</h2>
+        <div class="intro">
+          <p>
+            <strong>Data</strong>
+            The dataset contains end of month index level for S&P500 from yyyymmdd to yyyymmdd. 
+          </p>
+          <p>
+            <strong>Interactive Slideshow</strong>
+          
+          </p>
+          <p>
+            <strong>Scenes</strong>
+           
+          </p>
+          <p>
+            <strong>Annotations</strong>
+
+          </p>
+          <p>
+            <strong>Parameters</strong>
+
+          </p>
+          <p>
+            <strong>Triggers</strong>
+
+          </p>
+        </div>
+      </div>
+      
+      <div class="slide" data-anchor="chart1">
+        <h3>Recession: 1</h3>
+        <div class="chart chart1">
+          <svg id="svg1"></svg>
+        </div>
+        <div class="intro">
+          <p>
+            This chart 1 explanation.
+          </p>
+          <p>
+            new paragraph
+          </p>
+        </div>
+      </div>
+      <div class="slide" data-anchor="chart2">
+        <h3>Recession: 2</h3>
+        <div class="chart chart2">
+          <svg id="svg2"></svg>
+          <!-- <input type="checkbox" checked="checked" value="2014" id="Action" onClick="updateChart2Data()">Action</input>
+          <input type="checkbox" checked="checked" value="2015" id="Adventure" onClick="updateChart2Data()">Adventure</input>
+          ut type="checkbox" checked="checked" value="2021" id="Western" onClick="updateChart2Data()">Western</input> -->
+        </div>
+        <div class="intro">
+          <p>
+            Chart2 place hold
+          </p>
+          <p>
+            ...
+          </p>
+        </div>
+      </div>
+      <div class="slide" data-anchor="chart3">
+        <h3>Recession 3</h3>
+        <div class="chart chart3">
+          <svg id="svg3"></svg>
+          <!-- <input type="checkbox" checked="checked" value="2014" id="checkbox-2014" onClick="updateChart3Data()">2014</input>
+          <input type="checkbox" checked="checked" value="2015" id="checkbox-2015" onClick="updateChart3Data()">2015</input>
+          <input type="checkbox" checked="checked" value="2021" id="checkbox-2021" onClick="updateChart3Data()">2021</input> -->
+        </div>
+        <div class="intro">
+          <p>
+            Chart 3 place hold.
+          </p>
+          <p>
+            place hold
+          </p>
+        </div>
+      </div>
+      <div class="slide" data-anchor="source">
+        <h2>Reference</h2>
+        <div class="intro">
+          <p>
+            <strong>Dataset</strong><br/>
+            <a href="https://www.spglobal.com/spdji/en/web-data-downloads/reports/dja-performance-report-monthly.xls?" target="_blank">
+              https://www.spglobal.com/en/
+            </a>
+          </p>
+          <p>
+            <strong>Fullpage.js (used for slideshow)</strong><br/>
+            <a href="https://github.com/alvarotrigo/fullPage.js" target="_blank">
+              https://github.com/alvarotrigo/fullPage.js
+            </a>
+          </p>
+          <p>
+            <strong>Source code</strong><br/>
+            <a href="https://github.com/wang264/UIUC-CS416-Narrative-Visualization" target="_blank">
+              https://github.com/wang264/UIUC-CS416-Narrative-Visualization
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+  <!-- <script src="scripts/scrolloverflow.min.js"></script> -->
+  <script src="template/fullpage.min.js"></script>
+  <script src="template/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-color.v1.min.js"></script>
+  <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-array@3"></script>
+  <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+  <script>
+    var charts = {};
+  </script>
+  <script src="scripts/chart1.js"></script>
+  <script src="scripts/chart2.js"></script>
+  <script src="scripts/chart3.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
 </html>
