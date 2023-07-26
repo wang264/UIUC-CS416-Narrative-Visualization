@@ -129,7 +129,10 @@ a {
 
 #svg1,
 #svg2,
-#svg3 {
+#svg3,
+#svg4,
+#svg5,
+#svg6 {
   width: 800px;
   height: 500px;
 }
@@ -149,10 +152,7 @@ line.annotation {
   stroke: #ff5f45;
 }
 
-/* chart 2 3 */
-.chart2, .chart3 {
-  margin-bottom: 60px;
-}
+
 .panel {
   margin: 10px auto 10px;
 }
@@ -160,18 +160,7 @@ line.annotation {
   margin: 0 20px;
 }
 
-/* chart 4 */
-.chart4 {
-  width: 502px;
-  height: 502px;
-}
-#svg4 {
-  width: 500px;
-  height: 500px;
-}
-#svg4 rec {
-  opacity: 0.1;
-}
+
 #map {
   position: relative;
   top: -505px;

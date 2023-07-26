@@ -1,4 +1,4 @@
-charts.chart2 = function() {
+charts.chart3 = function() {
     // initialise layout variables
     const margin = {top: 50, right: 20, bottom: 50, left: 60};
     const width = 600;
@@ -7,7 +7,7 @@ charts.chart2 = function() {
     const parseDateTime = d3.timeParse("%B %d, %Y");
   
     // initialise charts
-    const svg = d3.select('#svg2')
+    const svg = d3.select('#svg3')
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom)
         .append('g')
@@ -15,7 +15,7 @@ charts.chart2 = function() {
   
   
   //Read the data
-  d3.csv("data/recession_2.csv",
+  d3.csv("data/recession_3.csv",
   
   // When reading the csv, I must format variables:
   function(d){

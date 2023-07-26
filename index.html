@@ -24,7 +24,7 @@
         <div class="intro">
           <p>
             <strong>Data</strong>
-            The dataset contains end of month index level for S&P500 from yyyymmdd to yyyymmdd. 
+            The dataset contains end of month index level for Dow Jones Industrial Average from May 1896 to June 2023. 
           </p>
           <p>
             <strong>Interactive Slideshow</strong>
@@ -50,7 +50,8 @@
       </div>
       
       <div class="slide" data-anchor="chart1">
-        <h3>Great Depression August 1929 to March 1933</h3>
+        <h3>Great Depression</h3>
+        <h4>August 1929 - March 1933</h4>
         <div class="chart chart1">
           <svg id="svg1"></svg>
         </div>
@@ -61,40 +62,72 @@
         </div>
       </div>
       <div class="slide" data-anchor="chart2">
-        <h3>Recession at 1937(May 1937 – June 1938)</h3>
+        <h3>1973 Oil Crisis</h3>
+        <h4>November 1973 – March 1975</h4>
         <div class="chart chart2">
           <svg id="svg2"></svg>
         </div>
         <div class="intro">
           <p>
-            The Recession of 1937 is only considered minor when compared to the Great Depression, but is otherwise among the worst recessions of the 20th century. Three explanations are offered as causes for the recession: the tight fiscal policy resulting from an attempt to balance the budget after New Deal spending; the tight monetary policy of the Federal Reserve; and the declining profits of businesses leading to a reduction in business investment.
+            The 1973 oil crisis, a quadrupling of oil prices by OPEC, coupled with the 1973–1974 stock market crash led to a stagflation recession in the United States.
           </p>
         </div>
       </div>
       <div class="slide" data-anchor="chart3">
-        <h3>Recession 3</h3>
+        <h3>Dotcom Bubble</h3>
+        <h4>March 2001 – November 2001</h4>
         <div class="chart chart3">
           <svg id="svg3"></svg>
-          <!-- <input type="checkbox" checked="checked" value="2014" id="checkbox-2014" onClick="updateChart3Data()">2014</input>
-          <input type="checkbox" checked="checked" value="2015" id="checkbox-2015" onClick="updateChart3Data()">2015</input>
-          <input type="checkbox" checked="checked" value="2021" id="checkbox-2021" onClick="updateChart3Data()">2021</input> -->
         </div>
         <div class="intro">
           <p>
-            Chart 3 place hold.
+            The 1990s were the longest period of economic growth in American history up to that point. The collapse of the speculative dot-com bubble, a fall in business outlays and investments, and the September 11th attacks,[73] brought the decade of growth to an end. Despite these major shocks, the recession was brief and shallow.
           </p>
+        </div>
+      </div>
+      <div class="slide" data-anchor="chart4">
+        <h3>Great Recession</h3>
+        <h4>December 2007 – June 2009</h4>
+        <div class="chart chart4">
+          <svg id="svg4"></svg>
+        </div>
+        <div class="intro">
           <p>
-            place hold
+            The subprime mortgage crisis led to the collapse of the United States housing bubble. Falling housing-related assets contributed to a global financial crisis, even as oil and food prices soared. The government responded with an unprecedented $700 billion bank bailout and $787 billion fiscal stimulus package. The National Bureau of Economic Research declared the end of this recession over a year after the end date.
           </p>
+        </div>
+      </div>
+      <div class="slide" data-anchor="chart5">
+        <h3>COVID-19 recession</h3>
+        <h4>February 2020 – April 2020</h4>
+        <div class="chart chart5">
+          <svg id="svg5"></svg>
+        </div>
+        <div class="intro">
+          <p>
+            The economic effects of the pandemic were severe after the first quarter of 2020. More than 24 million people lost jobs in the United States in just three weeks in April. Official economic impact of the virus is still being determined, but the recession was one of the shortest on record, helped in part by online purchases, zero interest rates, and loosening of fiscal policies by the Fed to prop up the economy.
+          </p>
+        </div>
+      </div>
+      <div class="slide" data-anchor="chart6">
+        <h2>Dow Jones Industrial Average Index Level for All Periods </h3>
+        <h3>(<b>Brush</b> the chart to zoom, <b>Double click</b> to reset)</h3>
+        <div class="chart chart6">
+          <svg id="svg6"></svg>
         </div>
       </div>
       <div class="slide" data-anchor="source">
         <h2>Reference</h2>
         <div class="intro">
           <p>
-            <strong>Dataset</strong><br/>
+            <strong>Dataset&Research</strong><br/>
             <a href="https://www.spglobal.com/spdji/en/web-data-downloads/reports/dja-performance-report-monthly.xls?" target="_blank">
               https://www.spglobal.com/en/
+            </a>
+          </p>
+          <p>
+            <a href="https://en.wikipedia.org/wiki/List_of_recessions_in_the_United_States#Great_Depression_onward_(1929%E2%80%93present)" target="_blank">
+              https://en.wikipedia.org/
             </a>
           </p>
           <p>
@@ -122,13 +155,15 @@
   <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3-array@3"></script>
-  <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
   <script>
     var charts = {};
   </script>
   <script src="scripts/chart1.js"></script>
   <script src="scripts/chart2.js"></script>
   <script src="scripts/chart3.js"></script>
+  <script src="scripts/chart4.js"></script>
+  <script src="scripts/chart5.js"></script>
+  <script src="scripts/chart6.js"></script>
   <script src="scripts/main.js"></script>
 
 </body>
